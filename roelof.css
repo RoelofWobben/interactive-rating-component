@@ -60,13 +60,16 @@ button:hover {
 }
 
 h1 {
-    color: var(--white); 
+    color: var(--white);
+    text-align: center; 
 }
 
 .choice_container {
     background-color: var(--dark-blue);
     border-radius: 10px;
-    padding: 20px;    
+    padding: 20px;
+    opacity: 1;
+    display: block;      
 }
 
 img {
@@ -93,7 +96,8 @@ img {
     padding-left: 40px; 
     padding-right: 40px;
     border-radius: 10px;
-    display: none;     
+    opacity: 0;
+    display: none;       
 }
 
 .choices {
@@ -128,8 +132,9 @@ img {
 .outcome{
     background-color: var(--clay); 
     padding: 10px 15px;
-    border-radius:20px;
+    border-radius:20px; 
     color: var(--orange); 
+    text-align: center ; 
 }
 
 .thanks {
@@ -137,6 +142,17 @@ img {
 }
 
 
+.fade_away {
+    opacity: 0;
+    transition: opacity 1s;
+    display: none;  
+}
+
+.fade_up {
+    opacity: 1; 
+    transition: opacity 1s;
+    display: flex;  
+}
 
 
 
