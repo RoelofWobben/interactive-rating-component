@@ -35,17 +35,45 @@ h2 {
 
 p {
     color: var(--light-grey);
-    margin-bottom: 10px;  
+    margin-bottom: 30px;
+    margin-top: 30px; 
+  
+}
+
+button{
+    background-color: var(--orange); 
+    padding: 10px 30px;
+    width: 300px;
+    border-radius: 10px; 
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 20px; 
+}
+
+button:hover {
+    background-color: var(--white); 
+    color: var(--orange); 
+}
+
+h1 {
+    color: var(--white); 
 }
 
 .choice_container {
     background-color: var(--dark-blue);
     border-radius: 10px;
-    padding-left: 20px; 
-    padding-right: 20px;
-    padding-top: 20px;     
+    padding: 20px;
+    display: none;    
 }
 
+img {
+    width: 60%; 
+    height: 60%; 
+}
 .star_image {
     display: flex; 
     align-items: center;
@@ -58,9 +86,56 @@ p {
 }
 
 .thanks_container{
-    background-color: var(--dark-blue);  
-    display: none; 
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 10px;    
 }
+
+.choices {
+    margin-bottom: 25px; 
+}
+
+.choices input[type="radio"] {
+    opacity: 0; 
+    position: fixed; 
+    width: 0; 
+}
+
+.choices input[type="radio"]:checked + label{
+    background-color: var(--light-grey); 
+    color: var(--white); 
+}
+
+.choices input[type="radio"]:hover + label{
+    background-color: var(--orange); 
+    color: var(--white); 
+}
+.choices label{
+    display: inline-block; 
+    background-color: var(--clay); 
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin-right: 7px; 
+    color: var(--light-grey);
+    font-weight: 700;   
+}
+
+.outcome{
+    background-color: var(--clay); 
+    padding: 10px 15px;
+    border-radius:20px;
+    color: var(--orange); 
+}
+
+.thanks {
+    text-align: center; 
+}
+
+
+
 
 
 
