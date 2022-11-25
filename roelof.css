@@ -66,8 +66,7 @@ h1 {
 .choice_container {
     background-color: var(--dark-blue);
     border-radius: 10px;
-    padding: 20px;
-    display: none;    
+    padding: 20px;    
 }
 
 img {
@@ -91,7 +90,10 @@ img {
     flex-direction: column; 
     align-items: center;
     padding-top: 40px;
-    border-radius: 10px;    
+    padding-left: 40px; 
+    padding-right: 40px;
+    border-radius: 10px;
+    display: none;     
 }
 
 .choices {
